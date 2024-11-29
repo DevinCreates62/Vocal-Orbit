@@ -1,0 +1,165 @@
+<html><head><base href="." /><title>Vocal Orbit Podcast - Join Kate and Dave</title><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="Untitled_design-removebg-preview.png">
+<style>
+:root {
+  --primary-color: #00e5ff;
+  --secondary-color: #b300ff;
+  --bg-dark: #0a0a0a;
+  --bg-darker: #050505;
+  --text-light: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+  background: radial-gradient(circle at center, var(--bg-darker) 0%, var(--bg-dark) 100%);
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+}
+
+.logo {
+  width: 450px;
+  height: 450px;
+  margin-bottom: 2rem;
+  animation: float 6s ease-in-out infinite;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(0,229,255,0.3));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.latest-episodes {
+  padding: 4rem 2rem;
+  background: var(--bg-darker);
+}
+
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.episode-card {
+  background: var(--bg-dark);
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: transform 0.3s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.episode-card:hover {
+  transform: translateY(-5px);
+}
+
+.hosts-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--bg-dark), var(--bg-darker));
+}
+
+.hosts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.host-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.host-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border: 3px solid;
+  border-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color)) 1;
+}
+
+.cta-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: var(--bg-darker);
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <img src="Untitled_design-removebg-preview.png" alt="Vocal Orbit Logo" class="logo">
+      <h1 class="gradient-text">Welcome to Vocal Orbit</h1>
+      <p style="margin: 2rem 0; font-size: 1.2rem;">
+        Join Kate and Dave as they explore a universe of topics, sharing their unique perspectives, humor, and insights. From current events and pop culture to deep dives into life's quirks, every episode promises a lively orbit around the stuff that sparks their curiosity.
+      </p>
+    </div>
+  </section>
+
+  <section class="latest-episodes" id="episodes">
+    <h2 class="gradient-text" style="text-align: center; margin-bottom: 3rem;">Latest Episodes</h2>
+    <div class="episode-grid">
+      <div class="episode-card">
+        <h3>Episode 42: The Great Pizza Debate</h3>
+        <p>Kate and Dave settle the age-old question: Does pineapple belong on pizza?</p>
+      </div>
+      <div class="episode-card">
+        <h3>Episode 41: Time Travel Troubles</h3>
+        <p>Would you rather visit the past or the future? Our hosts dive deep into temporal paradoxes.</p>
+      </div>
+      <div class="episode-card">
+        <h3>Episode 40: Social Media Mayhem</h3>
+        <p>Exploring the weird and wonderful world of viral trends and online phenomena.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hosts-section" id="hosts">
+    <h2 class="gradient-text" style="text-align: center; margin-bottom: 3rem;">Meet Your Hosts</h2>
+    <div class="hosts-grid">
+      <div class="host-card">
+        <img src="Screenshot 2024-11-28 183204.png" alt="Kate" class="host-avatar">
+        <h3>Kate</h3>
+        <p>Professional overthinker, cat enthusiast, and collector of random facts. Always ready with a witty comeback.</p>
+      </div>
+      <div class="host-card">
+        <img src="Screenshot 2024-11-28 183216.png" alt="Dave" class="host-avatar">
+        <h3>Dave</h3>
+        <p>Pop culture encyclopedia, dad joke connoisseur, and master of questionable impressions. Never met a topic he couldn't relate to Star Wars.</p>
+      </div>
+    </div>
+  </section>
+</body></html>
